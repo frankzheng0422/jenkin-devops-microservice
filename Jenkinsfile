@@ -15,10 +15,12 @@ node {
 */
 //Declarative
 pipeline {
-	agent any
+	//agent any
+	agent { docker {image 'maven:3.6.3-openjdk-11-slim' }}
 	stages {
 		stage('Build') {
 			steps {
+				echo "mvn --version"
 				echo "Build"
 			}
 		}
