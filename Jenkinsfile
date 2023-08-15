@@ -18,7 +18,7 @@ pipeline {
 	agent any
 	//agent {  
 	//	docker {'maven:3.9.3-eclipse-temurin-17' } 
-	}
+	//}
 	stages {
 		stage('Build') {
 			steps {
